@@ -1,5 +1,8 @@
 require 'colorizr'
 
+String.methods
+String.colors
+
 john = 'John'.red
 
 puts "I've changed #{john}'s color!".light_blue
