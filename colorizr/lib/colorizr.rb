@@ -15,7 +15,7 @@ class String
         }
 
         def self.create_colors
-                @@colors_hash.keys.each do |key, value|
+                @@colors_hash.each do |key, value|
                         self.class.send :define_method, "#{key}" do
                                 "\e[#{value}m#{self.to_s}\e[0m"
                         end
@@ -28,11 +28,9 @@ class String
 
         def self.sample_colors
                 @@colors_hash.each do |color, _|
-                        puts "This is #{color}.".send(color)
+                        puts "This is " + "#{color}".send(color) + "."
                 end
         end
 end
 
 String.create_colors
-String.colors
-String.sample_colors
