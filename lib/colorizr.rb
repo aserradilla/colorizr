@@ -16,8 +16,8 @@ class String
 
         def self.create_colors
                 @@colors_hash.each do |key, value|
-                        self.class.send :define_method, "#{key}" do
-                                "\e[#{value}m#{self.to_s}\e[0m"
+                        self.send(:define_method, "#{key}") do
+                                "\e[#{value}m#{self}\e[0m"
                         end
                 end
         end
