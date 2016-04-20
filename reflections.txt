@@ -1,0 +1,15 @@
+How does your gem take advantage of Ruby’s metaprogramming capabilities?
+
+        This gem uses define_method to automatically create as many colors as key-value pairs are in the hash.
+
+How long did you spend working on this project?
+
+        Aproximately 3-4 hours.
+
+What was the most rewarding challenge you conquered?
+
+        Being able to create my own gem, share it in git-hub and learn ruby's metaprogramming.
+
+Where do you still have room to grow?
+
+        DRY and synthesize my code more.
